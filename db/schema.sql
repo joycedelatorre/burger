@@ -8,5 +8,6 @@ CREATE TABLE burgers (
 	burger_name varchar(255) NOT NULL,
 	devoured boolean,
 	date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	`create_at` DATETIME NOT NULL,
 	PRIMARY KEY (id)
 );

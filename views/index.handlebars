@@ -1,0 +1,36 @@
+<div class ="container">
+
+  <div id="title">Yum-Yum Burger!</div>
+  <div class="row">
+    <div class="col-lg-4">
+      <h2>NomNom burger!</h2>
+  
+      <ul>
+        {{#each burgers}}
+          <li><p>{{this.burger_name}}</p></li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class='col-lg-4'>
+      <button type="submit" class="btn btn-primary">DEVOURED!!</button>
+    </div>
+
+     <div class='col-lg-4'>
+      <h2>Nomnom</h2>
+    </div>
+  </div>
+  <br>
+  <br>
+  
+  <div class="row">
+  <form>
+    <div class="form-group">
+      <label for="addBurger">Add a burger</label>
+      <input type="email" class="form-control" id="addBurger" aria-describedby="emailHelp" placeholder="Yummy burger!">
+      <medium id="tag-desc" class="form-text text-muted">Add the yummiest burger you could think of!</medium>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  </div>
+
+</div>
