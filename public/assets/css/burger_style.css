@@ -14,14 +14,20 @@ body{
 	font-weight:bold;
 }
 
+h2{
+	text-align: center;
+}
+
 label{
 	font-size:30px;
+	color:teal;
 }
 
 #tag-desc{
 	color:black;
 	font-weight:bold;
 	font-size:20px;
+
 }
 
 p{
