@@ -9,6 +9,7 @@ var connection = mysql.createConnection({
   database: "wdp0kxhyojj1n14b"
 });
 
+
 // Make connection.
 connection.connect(function(err) {
   if (err) {
