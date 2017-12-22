@@ -1,15 +1,15 @@
 var mysql = require("mysql");
 // Set up MySQL connection.
 
-var connection = mysql.createConnection({
-  port: 3306,
-  host: "jlg7sfncbhyvga14.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-  user: "opcngnqvr976qqtu",
-  password: "vjd1dibgxcgx4t1u",
-  database: "wdp0kxhyojj1n14b"
-});
+//var connection = mysql.createConnection({
+  // port: 3306,
+  // host: "jlg7sfncbhyvga14.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  // user: "opcngnqvr976qqtu",
+  // password: "vjd1dibgxcgx4t1u",
+  // database: "wdp0kxhyojj1n14b"
+//});
 
-
+var connection = mysql.createConnection(process.env.JAWSDB_MARIA_URL);
 // Make connection.
 connection.connect(function(err) {
   if (err) {
