@@ -1,22 +1,36 @@
 <div class ="container">
 
-  <div id="title">Yum-Yum Burger!</div>
-  <div class="row">
-    <div class="col-lg-4">
-      <h2>NomNom burger!</h2>
+  <div id="title">NomNom Burger!</div>
+  <br>
   
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Yum-Yum burger!</h2>
       <ul>
         {{#each burgers}}
-          <li><p>{{this.burger_name}}</p></li>
+          {{#unless devoured}}
+          <li>
+            <p>
+              {{this.burger_name}}
+              <button type="submit" class="btn btn-primary" id="devour"> DEVOURED!!! </button>
+            </p>
+          </li>
+          {{/unless}}
         {{/each}}
       </ul>
     </div>
-    <div class='col-lg-4'>
-      <button type="submit" class="btn btn-primary">DEVOURED!!</button>
-    </div>
+    
 
-     <div class='col-lg-4'>
-      <h2>Nomnom</h2>
+     <div class="col-md-6"> <!-- i dont know how to put them side by side seems like bootstrap is not being applied -->
+      <h2>Burrrp-GER!!!</h2>
+       <ul>
+        {{#each burgers}}
+          {{#if devoured}}
+          <li><p>{{this.burger_name}}</p></li>
+          {{/if}}
+        {{/each}}
+      </ul>
+
     </div>
   </div>
   <br>
