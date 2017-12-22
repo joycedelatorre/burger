@@ -9,6 +9,7 @@ var mysql = require("mysql");
   // database: "wdp0kxhyojj1n14b"
 //});
 
+
 var connection = mysql.createConnection(process.env.JAWSDB_MARIA_URL);
 // Make connection.
 connection.connect(function(err) {
