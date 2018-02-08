@@ -7,7 +7,7 @@ To demonstrate how ORMs manipulate mysql database and demonstrating MVC structur
 3. To be able to update the status of burgers from not being eaten to being devoured.
 4. Apply the functionality of adding a new type of burger.
 
-[EatDaBurger](https://limitless-waters-43833.herokuapp.com/)
+## Check me out [EatDaBurger](https://limitless-waters-43833.herokuapp.com/)
 
 ![Alt text](/public/assets/img/nomnomBurger.png "Nomnom burger")
 
